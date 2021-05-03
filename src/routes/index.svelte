@@ -6,7 +6,10 @@
 	<header>
 		<h1>Memory Game</h1>
 	</header>
-	<div>
-		<div class="bg-red-500 h-5" />
+	<div class="grid grid-cols-2 gap-4 h-96 w-96">
+		<div class="bg-red-500" />
+		<div class="bg-green-500" />
+		<div class="bg-red-500" />
+		<div class="bg-green-500" />
 	</div>
 </section>
