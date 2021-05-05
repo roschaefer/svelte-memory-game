@@ -1,14 +1,6 @@
 <script lang="ts">
-	enum CardStates {
-		hidden,
-		flipped,
-		revealed
-	}
-	export let color = 'bg-red-500';
-	let flipped = CardStates.hidden;
-	const handleClick = () => {
-		flipped = flipped === CardStates.hidden ? CardStates.flipped : CardStates.hidden;
-	};
+	import { CardState } from '$lib/cardStates.ts'
+	export let motif: { id: number, state: CardState, color: string }
 </script>
 
-<div class={flipped === CardStates.hidden ? 'bg-gray-500' : color} on:click={handleClick} />
+<div class={motif.state === CardState.hidden ? 'bg-gray-500' : motif.color} on:click />
