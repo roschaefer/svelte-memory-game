@@ -1,6 +1,6 @@
 <script>
 	export let color = 'bg-red-500';
-	let flipped = false;
+	let flipped = true;
 	const handleClick = () => {
 		flipped = !flipped;
 	};
